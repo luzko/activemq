@@ -1,0 +1,18 @@
+server:
+  port: 8095
+
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+    packages:
+      trust-all: true
+
+topics:
+  topic: topic
+  virtual: VirtualTopic.MAIN
+
+queues:
+  request-queue: request-queue
+  reply-queue: reply-queue
